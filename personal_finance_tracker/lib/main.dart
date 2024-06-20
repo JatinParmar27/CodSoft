@@ -13,6 +13,8 @@ void main() {
       ],
       child: const MyApp(),
     ),
+    // this is main app
+
   );
 }
 
