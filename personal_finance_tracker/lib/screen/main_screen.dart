@@ -40,20 +40,36 @@ class _MainScreenState extends State<MainScreen> {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text('Drawer Header'),
+              child: Text('Personal Finance Application'),
             ),
             ListTile(
-              title: const Text('Item 1'),
+              title: const Text('Add Income'),
               onTap: () {
-                // Update the state of the app.
-                // ...
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Income()),
+                );
               },
             ),
             ListTile(
-              title: const Text('Item 2'),
+              title: const Text('Add Expense'),
               onTap: () {
-                // Update the state of the app.
-                // ...
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Expense()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Recent Transactions'),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Transactions()),
+                );
               },
             ),
           ],
