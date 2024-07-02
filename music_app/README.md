@@ -1,4 +1,4 @@
-# flutter_by_letsupgrade2
+# Music App
 
 A new Flutter project.
 
